@@ -73,7 +73,6 @@ __Description:__ This problem shows the use of __matplotlib.pyplot__ for creatin
 
 __Example:__
 ```
-Output:
 <img width="646" height="257" alt="Image" src="https://github.com/user-attachments/assets/de0e481a-68fa-4b50-afc8-408805c1bb38" />
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------
