@@ -72,9 +72,9 @@ plt.bar(df['Hometown'], df['Average']) #X as the hometown and y as the average, 
 __Description:__ This problem shows the use of __matplotlib.pyplot__ for creating visualizations. Again, __subs=[]__ was used to store all features, and __.mean()__ was used to get the mean of all the stored features in subs. __plt.figure()__ function was used to determine the size of the plot, by giving its width and length. Then __plt.bar(x,y)__ was used to determine the x and y coordinates of the plot, which is the specific feature and its contribution to the average.  
 
 __Example:__
-```
+
 <img width="646" height="257" alt="Image" src="https://github.com/user-attachments/assets/de0e481a-68fa-4b50-afc8-408805c1bb38" />
-```
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 __Lessons Learned:__
 
