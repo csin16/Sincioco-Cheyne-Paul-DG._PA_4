@@ -56,24 +56,41 @@ __2. Create a visualization that shows how the different features contribute to 
 __Code:__
 ```
 import matplotlib.pyplot as plt #Import matplot library as variable plt
-subs = ['Electronics', 'GEAS', 'Math', 'Communication'] #Set a single variable for all the features/subjects
+subs = ['Electronics', 'GEAS', 'Math', 'Communication']#Set a single variable for all the features/subjects
 df['Average'] = df[subs].mean(axis=1) #Gets the average of the subjects per name
+AveragebyGender = df.groupby('Gender')['Average'].mean() 
+AveragebyTrack = df.groupby('Track')['Average'].mean() #Groups the data depending on the feature and computes its mean
+AveragebyHometown = df.groupby('Hometown')['Average'].mean()
 
-plt.figure(figsize=(8, 3)) #Width and length of the plot
-plt.bar(df['Gender'], df['Average']) #X as the gender and y as the average, shows the average based on their gender
 
-plt.figure(figsize=(8, 3))
-plt.bar(df['Track'], df['Average']) #X as the track and y as the average, shows the average based on their track
+plt.figure(figsize=(6, 5)) #Width and length of the plot
+plt.title('Average by Gender')
+plt.ylabel('Average Score')
+plt.xlabel('Gender')
+plt.bar(AveragebyGender.index, AveragebyGender.values) #X as the gender and y as the average, shows the average based on their gender
 
-plt.figure(figsize=(8, 3))
-plt.bar(df['Hometown'], df['Average']) #X as the hometown and y as the average, shows the average based on their hometown
+plt.figure(figsize=(6, 5)) #Width and length of the plot
+plt.title('Average by Track')
+plt.ylabel('Average Score')
+plt.xlabel('Track')
+plt.bar(AveragebyTrack.index, AveragebyTrack.values) #X as the track and y as the average, shows the average based on their track
+
+plt.figure(figsize=(6, 5)) #Width and length of the plot
+plt.title('Average by Hometown')
+plt.ylabel('Average Score')
+plt.xlabel('Hometown')
+plt.bar(AveragebyHometown.index, AveragebyHometown.values) #X as the hometown and y as the average, shows the average based on their hometown
 ```
 
-__Description:__ This problem shows the use of __matplotlib.pyplot__ for creating visualizations. Again, __subs=[]__ was used to store all features, and __.mean()__ was used to get the mean of all the stored features in subs. __plt.figure()__ function was used to determine the size of the plot, by giving its width and length. Then __plt.bar(x,y)__ was used to determine the x and y coordinates of the plot, which is the specific feature and its contribution to the average.  
+__Description:__ This problem shows the use of __matplotlib.pyplot__ for creating visualizations. Again, __subs=[]__ was used to store all features, and __.mean()__ was used to get the mean of all the stored features in subs. __df.groupby()__ gets the average by feature. __plt.figure()__ function was used to determine the size of the plot, by giving its width and length. __.index__ will return the feature or the category, and __.values__ will return the computed average for each feature.
 
 __Example:__
 
-<img width="646" height="257" alt="Image" src="https://github.com/user-attachments/assets/de0e481a-68fa-4b50-afc8-408805c1bb38" />
+<img width="531" height="457" alt="Image" src="https://github.com/user-attachments/assets/4f6b1092-7f11-4613-a030-7c70721fba78" />
+
+<img width="531" height="452" alt="Image" src="https://github.com/user-attachments/assets/1d55282b-13fd-4d8b-ab5b-a6d634edebf8" />
+
+<img width="519" height="455" alt="Image" src="https://github.com/user-attachments/assets/a5f19dd2-5d2a-4f22-bca0-39e3aebb4529" />
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 __Lessons Learned:__
