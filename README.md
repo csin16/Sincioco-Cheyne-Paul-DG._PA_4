@@ -3,7 +3,7 @@ _Cheyne Paul DG. Sincioco-2ECEA_PA-4_
 _PA#4 DATA WRANGLING AND DATA VISUALIZATION_
 
 # __About the Programming Assignment__
-This programming assignment is about simplifying large data sets and producing a visualization to help reveal patterns and trends faster. This task requires us to perform different functions to reveal specific elements and create a visualization to identify if a certain feature affect the result.
+This programming assignment is about simplifying large data sets and producing a visualization to help reveal patterns and trends faster. This task requires us to perform different functions to reveal specific elements and create a visualization to identify if a certain feature affects the result.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 __ECE BOARD EXAM PROBLEM: Using data wrangling and data visualization techniques with storytelling, analyze the data and present different (i) data frames; and (ii) visuals using the dataset given.__
@@ -50,7 +50,7 @@ Mindy = df.loc[(df['Average'] >= 55) &
         (df['Hometown']=='Mindanao') & 
         (df['Gender']=='Female'), ['Name', 'Track', 'Electronics', 'Average']]
         display('b.)' , Mindy)
-#Locates the elements whose average is higher than or equal to 55, their hometown is Mindanao, and is a female
+#Locates the elements whose average is higher than or equal to 55, their hometown is Mindanao, and they are female
 #Also displays their name, track, electronics subject, and their average
 ```
 The code __df.loc__ was used again to locate the specific features, such as their Hometown must be Mindanao, and their Gender must be Female. Then their name, track, electronics, and average grade were displayed.
@@ -64,7 +64,7 @@ __2. Create a visualization that shows how the different features contribute to 
 
 __Code:__
 ```
-import matplotlib.pyplot as plt #Import matplot library as variable plt
+import matplotlib.pyplot as plt #Import matplotlib Library as variable plt
 ```
 The __matplotlib.pyplot__ is a code for creating visualizations. It was imported as the variable plt.
 
