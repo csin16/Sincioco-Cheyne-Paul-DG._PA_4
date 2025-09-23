@@ -31,25 +31,12 @@ display('b.)' , Mindy)
 ```
 __Description:__ This problem shows the use of loading a __.xlsx__ file in Python. With the use of __pd.read_excel()__, the file was loaded and was stored in df. Then, to locate a specific element or feature, use __df.loc__. __df.loc__ was used in this problem to find a specific feature. Their name, GEAS, and electronics were displayed. Next up, __subs[]__ was used to store all features into one variable. Then, .mean() was used to get the average of their subject and stored as the feature 'Average'. __df.loc__ was used again to locate the specific features and their name, track, electronics, and average grade were displayed.
 
-__Example:__
+__Example Output:__
 
-```
-Output:
-'a.)'
-Name	GEAS	Electronics
-0	S1	75	89
-7	S8	64	81
-29	S30	57	81
+<img width="333" height="156" alt="Image" src="https://github.com/user-attachments/assets/0d312a02-83d3-4d3c-a8ec-8e9a159842be" />
 
-'b.)'
-Name	Track	Electronics	Average
-1	S2	Communication	75	67.25
-2	S3	Instrumentation	74	72.75
-14	S15	Microelectronics	41	59.00
-16	S17	Microelectronics	79	70.50
-19	S20	Communication	60	66.50
+<img width="332" height="201" alt="Image" src="https://github.com/user-attachments/assets/805a2d05-6f30-42e5-a035-24c2b33c11ce" />
 
-```
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 __2. Create a visualization that shows how the different features contribute to the average grade. Does chosen track in college, gender, or hometown contribute to a higher average score?__
 
@@ -84,7 +71,7 @@ plt.bar(AveragebyHometown.index, AveragebyHometown.values) #X as the hometown an
 
 __Description:__ This problem shows the use of __matplotlib.pyplot__ for creating visualizations. Again, __subs=[]__ was used to store all features, and __.mean()__ was used to get the mean of all the stored features in subs. __df.groupby()__ gets the average by feature. __plt.figure()__ function was used to determine the size of the plot, by giving its width and length. __.index__ will return the feature or the category, and __.values__ will return the computed average for each feature.
 
-__Example:__
+__Example Output:__
 
 <img width="531" height="457" alt="Image" src="https://github.com/user-attachments/assets/4f6b1092-7f11-4613-a030-7c70721fba78" />
 
