@@ -1,6 +1,6 @@
-Cheyne Paul DG. Sincioco-2ECEA_PA-4
+_Cheyne Paul DG. Sincioco-2ECEA_PA-4_
 
-PA#4 DATA WRANGLING AND DATA VISUALIZATION
+_PA#4 DATA WRANGLING AND DATA VISUALIZATION_
 
 # __About the Programming Assignment__
 This programming assignment is about simplifying large data sets and producing a visualization to help reveal patterns and trends faster. This task requires us to perform different functions to reveal specific elements and create a visualization to identify if a certain feature affect the result.
